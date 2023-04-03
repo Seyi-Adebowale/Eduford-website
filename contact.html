@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Eduford University</title>
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="prec3onnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b219ab309.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/logo.png"</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us </h1>
+    </section>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15852.374749143264!2d3.5026371!3d6.6352862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c1d4e9bda430f71!2sFlower%20House%20Creche%20Care!5e0!3m2!1sen!2sng!4v1639055153263!5m2!1sen!2sng" width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Bangalore, Karnataka, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+2347062367015</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope-open"></i>
+                    <span>
+                        <h5>seyibowale15@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="formhandler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eos omnis quisquam maiores voluptates laboriosam impedit? <br>Similique facilis iure dolore, mollitia explicabo laborum praesentium, blanditiis excepturi architecto consequuntur libero dolores.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+</body>
+</html>
